@@ -1,0 +1,93 @@
+main {}
+
+.add-trip-area {
+
+  &__title {
+    margin: 1em 0 .3em;
+    font-size: 1.5em;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__content-item {
+    padding: 1em
+  }
+
+}
+
+.trip-content-area {
+
+  &-title {
+    margin: 1em 0 .3em;
+    font-size: 1.5em;
+  }
+
+  &-content {
+
+    .trip {
+      display: flex;
+      flex-wrap: wrap;
+
+      &-image {
+        padding: 1em;
+      }
+
+      &-detail {
+
+        margin-left: 1em;
+
+        &__destination {
+          margin: .5em 0;
+        }
+
+        &__departing-date {
+          margin: .5em 0;
+        }
+
+        &__countdown {
+          margin: 1em 0 .5em 0;
+        }
+
+        &__weather-info {
+          margin: .5em 0;
+        }
+
+        &__remove-button {
+          margin: 1em 0;
+        }
+      }
+    }
+  }
+}
+
+.input {
+  padding: .7em 1em;
+  margin: 0 0 0 .5em;
+  border: 1px solid #7a7a7a;
+  border-radius: 5px;
+  min-width: 190px;
+}
+
+.button {
+  background-color: white;
+  padding: .5em 1em;
+  margin: 0 1em 0 0;
+  border: 1px solid #7a7a7a;
+  border-radius: 5px;
+  width: fit-content;
+
+  &:hover {
+    //text-decoration: underline;
+    color: white;
+    background-color: #7a7a7a;
+    cursor: pointer;
+  }
+}
+
+.image {
+  max-width: 500px;
+}
